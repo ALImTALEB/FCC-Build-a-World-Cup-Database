@@ -124,3 +124,13 @@ chmod +x queries.sh
 ./queries.sh
 ./queries.sh
 ./queries.sh
+pg_dump -cC --inserts -U freecodecamp worldcup > worldcup.sql
+echo "# FCC-Build-a-World-Cup-Database" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ALImTALEB/FCC-Build-a-World-Cup-Database.git
+git push -u origin main
+ls --color=auto
+git add .
